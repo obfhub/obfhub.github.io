@@ -55,23 +55,24 @@
       return referer.includes('linkvertise.com');
     }
 
-    // Function to send the key to the specified URL
-    function sendKeyToServer(key) {
-      fetch('[https://i-want-a-bf-2.glitch.me/keysys](https://replit.com/@spulasugi/CornyApprehensiveEllipse)', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ key: key })
-      })
-      .then(response => response.json())
-      .then(data => {
-        console.log('Success:', data);
-      })
-      .catch(error => {
-        console.error('Error:', error);
-      });
-    }
+  // Function to send the key to the specified URL
+function sendKeyToServer(key) {
+  fetch('https://replit.com/@spulasugi/CornyApprehensiveEllipse', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ key: key })
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log('Success:', data);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+}
+
 
     // Function to create and display the key UI
     function displayKeyUI(encodedKey) {
